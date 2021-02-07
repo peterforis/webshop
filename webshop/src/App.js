@@ -1,6 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import { React, Component } from 'react';
+import Header from './Header';
+import Middle from './Middle';
+import Footer from './Footer';
 
 export default class App extends Component {
   constructor(props) {
@@ -27,6 +29,9 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
+          <Header />
+          <Middle />
+          <Footer />
           <form onSubmit={this.handleSubmit}>
             <label htmlFor="name">Enter your name: </label>
             <input
